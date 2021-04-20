@@ -1,4 +1,4 @@
-package illumnus.webApplication;
+package onlineStore.mercari;
 
 import java.util.List;
 
