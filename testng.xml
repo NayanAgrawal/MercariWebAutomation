@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Illumnus" parallel="tests" thread-count="3">
+	<listeners>
+		<listener
+			class-name="com.onlineStore.mercari.testBase.TestListener" />
+	</listeners>
+	<test name="Verify Homepage">
+		<classes>
+			<class name="com.onlineStore.mercari.testCase.TC001_VerifyHomePage">
+				<methods>
+					<include name="verifyHomepage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Verify New Address Registered">
+		<classes>
+			<class
+				name="com.onlineStore.mercari.testCase.TC002_VerifyNewAddressRegistered">
+				<methods>
+					<exclude name="verifyNewAddressRegistered" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Search Item">
+		<classes>
+			<class
+				name="com.onlineStore.mercari.testCase.TC003_SearchItem">
+				<methods>
+					<include name="searchItem" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

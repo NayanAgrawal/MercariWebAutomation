@@ -1,0 +1,36 @@
+# Mercari web automation
+
+Mercari automation using selenium java.
+
+## Installation
+
+Prerequisites
+Install the latest version of Java and Maven.
+You may need to set your JAVA_HOME.
+Eclipse
+
+#Run
+Configure Mercari Maven project in eclipse, Run TestNG.xml from current working directory
+
+
+#Take Screenshots
+On required steps or test failures screenshots will automatically be taken and can be viewed in extent report itself
+
+#Beautiful Console Output
+The console output is more intuitive and better readable as the default one of maven, jUnit, TestNG and Selenium. A colored console output will give you a clear overview about which tests are currently running.
+Logs are saved in project_folder/logs tO view logs in HTML format and text files format 
+
+#Centralized Project run
+All the TestNG test cases can be executed from single file called TestNG.xml
+
+#Independent Browser Version
+Scripts are independent of browser version and selenium version which comes from webdrivermanager dependency
+
+#Reports 
+Extent report is used for test cases status and can be viewed in TestReport folder, also test cases status is available in testNG default report (test-output/emailable-report.html) or HTML logs (log/application.html) from log4j. 
+
+#Browser used
+Chrome, Firefox, headless
+
+## Parallel execution
+Test cases can be executed parallally from testng.xml by passing thread-count in suite tag
