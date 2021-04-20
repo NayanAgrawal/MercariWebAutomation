@@ -38,6 +38,18 @@ public class TC001_VerifyHomePage extends TestBase {
 
 	}
 
+	// This is dummy test- Keep adding like this and configure in TestNG
+	@Test(priority = 2, enabled = false)
+	public void testcase2() throws Exception {
+
+		child = ExtentTestManager.startTest("Test case 2", "Test case 2 related to homepage");
+		child.log(Status.INFO, "Test case 2 related to homepage");
+
+		Homepage homepage = new Homepage(driver);
+		homepage.verifyHomepageTab();
+
+	}
+
 	@AfterMethod
 	public void endTest() {
 		if (driver != null) {
