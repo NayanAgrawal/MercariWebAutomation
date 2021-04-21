@@ -41,15 +41,16 @@ public class Homepage extends TC001_VerifyHomePage {
 
 		explicatWait(driver, verifyHomepage);
 
-		System.out.println(driver.getTitle());
+		log.info("Homepage title = " + driver.getTitle());
 
 		assertEquals("カテゴリーから探す", verifyHomepage.getText());
 
 		child.log(Status.INFO, "Homepage screenshot - " + ExtentTestManager.getTest()
 				.addScreenCaptureFromPath(getScreenshot(driver, "MercariHomepage")).toString());
-		
+
+		log.info("Verified mercari homepage");
 		child.log(Status.INFO, "Verified mercari homepage");
-		
+
 	}
 
 }

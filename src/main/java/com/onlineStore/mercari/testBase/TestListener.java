@@ -27,19 +27,18 @@ public class TestListener implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		System.out.println(("*** Running test method " + result.getMethod().getMethodName() + "..."));
-		// ExtentTestManager.startTest(result.getMethod().getMethodName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("*** Executed " + result.getMethod().getMethodName() + " test successfully...");
-		if(ExtentTestManager.getTest() != null) 
-			ExtentTestManager.getTest().log(Status.PASS, "Test passed");	
+		if (ExtentTestManager.getTest() != null)
+			ExtentTestManager.getTest().log(Status.PASS, "Test passed");
 	}
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
-		if(ExtentTestManager.getTest() != null)
-		ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
+		if (ExtentTestManager.getTest() != null)
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
 	}
 
 	public void onTestSkipped(ITestResult result) {

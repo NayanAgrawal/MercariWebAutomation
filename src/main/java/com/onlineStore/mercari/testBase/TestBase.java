@@ -141,7 +141,7 @@ public class TestBase {
 		File image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 		String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath()
-				+ "/src/main/java/com/illumnus/webApplication/screenshot/";
+				+ "/src/main/java/com/onlineStore/mercari/screenshot/";
 
 		String actualImageName = reportDirectory + imageName + "_" + format.format(calander.getTime()) + ".png";
 		File destFile = new File(actualImageName);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Illumnus" parallel="tests" thread-count="3">
+<suite name="Mercari App store" parallel="tests" thread-count="3">
 	<listeners>
 		<listener
 			class-name="com.onlineStore.mercari.testBase.TestListener" />
@@ -10,6 +10,7 @@
 			<class name="com.onlineStore.mercari.testCase.TC001_VerifyHomePage">
 				<methods>
 					<include name="verifyHomepage" />
+					<exclude name="testingTestcase" />					
 				</methods>
 			</class>
 		</classes>

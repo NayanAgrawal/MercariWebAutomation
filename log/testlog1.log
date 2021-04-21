@@ -1,23 +1,6 @@
-2021-04-19 19:02:00,148 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBook is - 132
-2021-04-19 19:02:08,747 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Mackbook keyword is present in item Name
-2021-04-19 19:02:08,785 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - item name is - MacBook Air 11??? Mid 2011
-2021-04-19 19:22:21,300 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBookis - 132
-2021-04-19 19:22:29,842 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - MacBook keyword not present in item Name
-2021-04-19 19:25:00,823 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBookis - 132
-2021-04-19 19:25:09,672 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - MacBook keyword not present in item Name
-2021-04-19 19:26:37,832 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBookis - 132
-2021-04-19 19:26:47,141 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - MacBook keyword is present in item Name
-2021-04-19 19:26:47,199 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Item name is - USB?? 3.0 PS4?? MacBook/Surface Pro ?
-2021-04-19 19:30:01,638 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBookis - 132
-2021-04-19 19:30:07,636 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - MacBook keyword is present in item Name
-2021-04-19 19:30:07,704 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Item name is - ??????? ???? PC???? ??? Macbook 19
-2021-04-19 20:23:31,471 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBookis - 132
-2021-04-19 20:23:40,009 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - MacBook keyword is present in item Name
-2021-04-19 20:23:40,088 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Item name is - Macbook???????????????????13??????????
-2021-04-19 20:25:33,957 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBookis - 132
-2021-04-19 20:25:39,831 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - MacBook keyword is present in item Name
-2021-04-19 20:25:39,901 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Item name is - Macbook???????????????????13??????????
-2021-04-20 11:12:20,675 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBookis - 132
-2021-04-20 11:12:29,795 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - MacBook keyword is present in item Name
-2021-04-20 11:12:29,925 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Item name is - Apple MacBook Pro MR9Q2J/A 2018
-2021-04-20 13:15:13,212 [main] INFO com.onlineStore.mercari.testCase.TC002_VerifyNewAddressRegistered - Signed in successful
+2021-04-21 14:48:30,837 [TestNG] INFO com.onlineStore.mercari.testCase.TC001_VerifyHomePage - Homepage title = ???? ???????? ??????
+2021-04-21 14:48:31,333 [TestNG] INFO com.onlineStore.mercari.testCase.TC001_VerifyHomePage - Verified mercari homepage
+2021-04-21 14:48:41,037 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Total number of item found in first page for MacBookis - 132
+2021-04-21 14:48:45,135 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Current URL - https://www.mercari.com/jp/items/m13306070670/
+2021-04-21 14:48:45,225 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - MacBook keyword is present in item Name
+2021-04-21 14:48:45,280 [TestNG] INFO com.onlineStore.mercari.testCase.TC003_SearchItem - Item name is - ????A1379 ? MacBook Air SuperDrive]

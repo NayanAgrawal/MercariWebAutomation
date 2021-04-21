@@ -115,7 +115,7 @@ public class AddVerifyNewAddressPage extends TC002_VerifyNewAddressRegistered {
 
 		assertEquals("カテゴリーから探す", verifyHomepage.getText());
 
-		loginPage();
+		loginPage(ReadPropertiesFile.getProperty("Username"), ReadPropertiesFile.getProperty("Password"));
 
 		shippingAddressesPage();
 
@@ -128,14 +128,14 @@ public class AddVerifyNewAddressPage extends TC002_VerifyNewAddressRegistered {
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
-	public void loginPage() throws IOException, InterruptedException {
+	public void loginPage(String userNameValue, String PasswordValue) throws IOException, InterruptedException {
 
 		loginButton.click();
 
 		Assert.assertEquals("アカウントをお持ちでない方はこちら", loginPageVerify.getText());
 
-		userNameText.sendKeys("testuser");
-		passwordText.sendKeys("testpassword");
+		userNameText.sendKeys(userNameValue);
+		passwordText.sendKeys(PasswordValue);
 
 		// Assuming captcha is disabled by developer in test environment
 		submitButton.click();
@@ -209,7 +209,7 @@ public class AddVerifyNewAddressPage extends TC002_VerifyNewAddressRegistered {
 		String verifyNewlyAddedShippingAddress = "//a[@class='new address'][@text='"
 				+ ReadPropertiesFile.getProperty("Name") + "']]";
 
-		//Verify newly added shipping address
+		// Verify newly added shipping address
 		Assert.assertEquals(ReadPropertiesFile.getProperty("Name"),
 				driver.findElement(By.xpath(verifyNewlyAddedShippingAddress)).getText());
 

@@ -57,7 +57,7 @@ public class SearchItemPage extends TC003_SearchItem {
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
-	public void searchItemTab(String itemNameValue) throws InterruptedException, IOException {
+	public void searchItemTab(String itemNameValue, int itemNumber) throws InterruptedException, IOException {
 
 		explicatWait(driver, verifyHomepage);
 
@@ -73,9 +73,12 @@ public class SearchItemPage extends TC003_SearchItem {
 				"Total number of item found in first page for " + itemNameValue + " is - " + sectionList.size());
 		log.info("Total number of item found in first page for " + itemNameValue + "is - " + sectionList.size());
 
-		sectionList.get(3).click();
+		sectionList.get(itemNumber).click();
 
-		Thread.sleep(5000);
+		explicatWait(driver, itemName);
+
+		child.log(Status.INFO, "Current URL - " + driver.getCurrentUrl());
+		log.info("Current URL - " + driver.getCurrentUrl());
 
 		if (verifyItemDetailPage.isDisplayed()) {
 			Assert.assertEquals(true, true);

@@ -36,7 +36,7 @@ public class TC003_SearchItem extends TestBase {
 		child.log(Status.INFO, "Search required item from store");
 
 		SearchItemPage searchItemPage = new SearchItemPage(driver);
-		searchItemPage.searchItemTab(ReadPropertiesFile.getProperty("ItemSearchName"));
+		searchItemPage.searchItemTab(ReadPropertiesFile.getProperty("ItemSearchName"), 3);
 
 	}
 
